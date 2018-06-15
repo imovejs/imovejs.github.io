@@ -1,0 +1,94 @@
+{
+	"title": "GitBook 使用教程",
+    "description": "记录 GitBook 的配置和一些插件的使用",
+    "author": "movecss",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "structure": {
+        "readme": "README.md"
+    }, 
+	"plugins": [
+		"fontsettings", 
+		"lunr",
+		"search", 
+		"livereload",
+		"include-codeblock",
+		"ace",
+        "-highlight", "prism", "prism-themes",
+		"advanced-emoji",  
+		"emphasize",
+		"expandable-chapters-small",  
+		"-sharing", 
+		"sharing-plus",
+		"tbfed-pagefooter", 
+		"versions-select",
+		"splitter",
+		"simple-page-toc",
+		"anchors",
+		"copy-code-button",
+		"alerts"
+		
+	],
+	"pluginsConfig": {
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-atom-dark.css"
+            ],
+			"lang": {
+			  "flow": "javacript"
+			}
+        },
+		"tbfed-pagefooter": {
+            "copyright": "Copyright © sinocare 2018",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+		"include-codeblock": {
+            "template": "ace",
+            "unindent": true,
+            "edit": true
+        },
+		"versions": {
+            "options": [
+                {
+                    "value": "1111111111111",
+                    "text": "v3.2.2"
+                },
+                {
+                    "value": "2222222222222",
+                    "text": "v2.6.4"
+                }
+            ]
+        },
+		"favicon": {
+            "shortcut": "favicon.ico",
+            "bookmark": "favicon.ico"
+        },
+		"sharing": {
+		   "douban": false,
+		   "facebook": false,
+		   "google": false,
+		   "hatenaBookmark": false,
+		   "instapaper": false,
+		   "line": false,
+		   "linkedin": false,
+		   "messenger": false,
+		   "pocket": false,
+		   "qq": false,
+		   "qzone": false,
+		   "stumbleupon": false,
+		   "twitter": false,
+		   "viber": false,
+		   "vk": false,
+		   "weibo": true,
+		   "whatsapp": false,
+		   "all": [
+			   "facebook", "google", "twitter",
+			   "weibo", "instapaper", "linkedin",
+			   "pocket", "stumbleupon"
+		   ]
+	   }
+    }
+}
